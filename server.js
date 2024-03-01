@@ -9,18 +9,6 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
 
-app.get("/home/:item" , (req, resp) => {
-    
-    const item = req.params.item
-    console.log(item)
-    if(item == 1){
-        resp.send("hi")
-    }
-    else{
-        resp.send("wrong item")
-    }
-    
-})
 
 app.get("/home", (req, resp)=>{
 
